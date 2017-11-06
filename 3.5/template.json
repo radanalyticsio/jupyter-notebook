@@ -21,7 +21,7 @@
             "spec": {
                 "tags": [
                     {
-                        "name": "3.5",
+                        "name": "latest",
                         "from": {
                             "kind": "DockerImage",
                             "name": "${JUPYTER_NOTEBOOK_IMAGE}"
@@ -162,7 +162,7 @@
         {
             "name": "JUPYTER_NOTEBOOK_IMAGE",
             "description": "jupyter notebook image",
-            "value": "submod/jupyter-notebook:3.5",
+            "value": "radanalyticsio/jupyter-notebook-py3.5",
             "from": "[a-zA-Z0-9]{10}",
             "required": true
         },
