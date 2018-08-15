@@ -15,7 +15,8 @@
             "metadata": {
                 "name": "${APPLICATION_NAME}",
                 "labels": {
-                    "appid": "jupyter-app-${APPLICATION_NAME}"
+                    "appid": "jupyter-app-${APPLICATION_NAME}",
+                    "appName": "${APPLICATION_NAME}"
                 }
             },
             "spec": {
@@ -36,7 +37,8 @@
             "metadata": {
                 "name": "${APPLICATION_NAME}",
                 "labels": {
-                    "appid": "jupyter-app-${APPLICATION_NAME}"
+                    "appid": "jupyter-app-${APPLICATION_NAME}",
+                    "appName": "${APPLICATION_NAME}"
                 }
             },
             "spec": {
@@ -83,6 +85,16 @@
                                         }
                                 ],
                                 "image": "${APPLICATION_NAME}:latest",
+                                "resources": {
+                                    "limits": {
+                                        "cpu": "4",
+                                        "memory": "8Gi"
+                                    },
+                                    "requests": {
+                                        "cpu": "4",
+                                        "memory": "8Gi"
+                                    }
+                                },
                                 "ports": [
                                     {
                                         "containerPort": 8888,
@@ -101,7 +113,8 @@
             "metadata": {
                 "name": "${APPLICATION_NAME}",
                 "labels": {
-                    "appid": "jupyter-app-${APPLICATION_NAME}"
+                    "appid": "jupyter-app-${APPLICATION_NAME}",
+                    "appName": "${APPLICATION_NAME}"
                 }
             },
             "spec": {
@@ -124,7 +137,8 @@
             "metadata": {
                 "name": "${APPLICATION_NAME}",
                 "labels": {
-                    "appid": "jupyter-app-${APPLICATION_NAME}"
+                    "appid": "jupyter-app-${APPLICATION_NAME}",
+                    "appName": "${APPLICATION_NAME}"
                 }
             },
             "spec": {
